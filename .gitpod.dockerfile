@@ -8,3 +8,4 @@ ENV APACHE_DOCROOT_IN_REPO="www"
 
 USER root
 RUN apt-get update 
+RUN apt-get install php7.2 php7.2-fpm php7.2-mysql -y
