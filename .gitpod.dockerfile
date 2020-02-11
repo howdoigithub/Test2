@@ -11,7 +11,6 @@ RUN apt-get update
 RUN apt-get install php7.2 php7.2-fpm php7.2-mysql -y
 RUN apt-get install mysql-server -y
 RUN mkdir /var/run/mysqld
-RUN mkdir /workspace/mysql-data
 RUN chown -R gitpod:gitpod /etc/mysql /var/run/mysqld /var/log/mysql /var/lib/mysql /var/lib/mysql-files /var/lib/mysql-keyring /var/lib/mysql-upgrade
  
 # Install our own MySQL config
